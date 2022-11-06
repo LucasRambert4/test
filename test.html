@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+<style>
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Georgia;
+    }
+    /* change the color of the navigation bar and make its ends circular */
+    .navbar{
+        background-color: black;
+        text-align: center;
+    }
+    /* nav elements come in single horizontal line */
+    .navbar li{
+        display:inline-block;
+        text-align: center;
+        list-style: none; 
+        margin: 13px;
+     }
+     /* Avoids background being removed by being overflown */
+    .navbar ul{
+        overflow: auto;
+    }
+    /* adding padding to the all the elements present in the navbar */
+    .navbar li a{
+        text-decoration: none;
+        color: white;
+    }
+    /* style the menu available in the navigation bar */
+    .navbar input{
+        border: 2px solid black;
+        border-radius: 14px;
+        padding: 3px 17px;
+        width: 129px;
+    }
+    /* hover effect to change element color when hovering over it */
+    .navbar li a:hover{
+            color: red;
+    }
+
+
+    /* Dropdown Button */
+    .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+    text-align: left;
+    position:static;
+    display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+    display:inline-block;
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    z-index: 1;
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #000000;}
+    .dropbtn:hover{
+            color: red;
+    }
+
+
+    .button{
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    }
+    .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+    .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+    .button:hover span {
+    padding-right: 30px;
+    }
+    .button:hover span:after {
+    opacity: 2;
+    right: 0;
+    }
+    .responsive {
+     max-width: 100%;
+     height: auto;
+    }
+
+</style>
+<header style="padding: 0;">
+    <nav class="navbar">
+        <ul style="font-size: 14px;font-family: Georgia;">
+            <li><a href="https://lucasrambert4.github.io/Web/Accueil.html">Accueil</a></li>
+            <li><a href="https://lucasrambert4.github.io/Web/A propos de nous.html">À propos de nous</a></li>
+            <li>
+                <div class="dropdown">
+                <button class="dropbtn"><a href="https://lucasrambert4.github.io/Web/Services.html" style="font-family: Georgia; font-size:0.9364548494983278vw;">Services</a></button>
+                <div class="dropdown-content">
+                  <a href="https://lucasrambert4.github.io/Web/Developpement web.html">Développement web</a>
+                  <a href="https://lucasrambert4.github.io/Web/Developpement mobile.html">Développement mobile</a>
+                  <a href="https://lucasrambert4.github.io/Web/Maintenance et gestion.html">Maintenance et gestion</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="https://lucasrambert4.github.io/Web/Contactez-nous.html">Contactez-nous</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+    <main>
+
+        <table style="width: 100%;border: 35px solid; border-color: rgb(0, 0, 0); border-top: 0px;border-bottom: 0px;border-bottom: 0px; background-color: black;padding-top:1px;">
+    
+            <tr style="height: 38.5rem;width:50rem;">
+
+                <td style="background-image: url(web-g5.jpg);background-repeat: no-repeat;background-attachment:local;background-size: cover;vertical-align: top; padding-top: 0px;align: center">
+                    <p style="font-size: 45px; font-family: Georgia; text-align: center; color: rgb(255, 255, 255);text-shadow: 2px 2px #000000;">Services de développement de logiciels et de sites Web</p>
+                    <p style="font-size:  27.5; font-family: Georgia; text-align: center;color: white;text-shadow: 2px 2px #000000;">SUIVEZ VOTRE VISION</p>
+                    <br><br><br><br>
+                    
+                    <p align="center">
+                        <a href="https://lucasrambert4.github.io/Web/Services.html" class="button" style="font-size: 18px; background-color: black; color: white;padding: 20px 70px; font-family: Georgia;"><span>Nos Services</span></a>
+                    </p>
+                </td>
+
+            </tr>
+
+            </table>
+            <p style="padding: 0; color: rgb(0, 0, 0);">
+                <nav class="navbar" style="background-color: white;">
+                    <ul style="color: black;">
+                        <li>Email: company@gmail.com</li>
+                        <li>Numéro de téléphone: +230 59465738</a></li>
+                    </ul>
+                </nav>
+            </p>
+    </main>
+</body>
+</html>
