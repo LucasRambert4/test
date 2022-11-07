@@ -118,7 +118,18 @@
      max-width: 100%;
      height: auto;
     }
+    
+    @media screen and (min-width: 601px) {
+  div.example {
+    font-size: 14px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 10px;
+  }
+}
 </style>
 <header style="padding: 0;">
     <nav class="navbar">
@@ -127,7 +138,7 @@
             <li><a href="https://lucasrambert4.github.io/Web/A propos de nous.html">À propos de nous</a></li>
             <li>
                 <div class="dropdown">
-                <button class="dropbtn"><a href="https://lucasrambert4.github.io/Web/Services.html" style="font-family: Georgia; font-size:0.9364548494983278vw;">Services</a></button>
+                <button class="dropbtn"><a href="https://lucasrambert4.github.io/Web/Services.html" style="font-family: Georgia"><div class="example">Services</a></div></button>
                 <div class="dropdown-content">
                   <a href="https://lucasrambert4.github.io/Web/Developpement web.html">Développement web</a>
                   <a href="https://lucasrambert4.github.io/Web/Developpement mobile.html">Développement mobile</a>
