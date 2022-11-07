@@ -131,24 +131,67 @@
     margin: 0px;
     padding: 0px;
     }
+ @media screen and (min-width: 601px) {
+  div.example {
+    font-size: 14px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 11px;
+  }
+}
+     @media screen and (min-width: 601px) {
+  div.titre {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.titre {
+    font-size: 14px;
+  }
+}
+         @media screen and (min-width: 601px) {
+  div.text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.text {
+    font-size: 11px;
+  }
+}
+         @media screen and (min-width: 601px) {
+  div.Petit_titre {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.Petit_titre {
+    font-size: 12px;
+  }
+}
 </style>
 <header style="padding: 0;">
     <nav class="navbar">
         <ul style="font-size: 14px;font-family: Georgia;">
-            <li><a href="https://lucasrambert4.github.io/Web/Accueil.html">Accueil</a></li>
-            <li><a href="https://lucasrambert4.github.io/Web/A propos de nous.html">À propos de nous</a></li>
+            <li><a href="https://lucasrambert4.github.io/Web/Accueil.html"><div class="example">Accueil</div></a></li>
+            <li><a href="https://lucasrambert4.github.io/Web/A propos de nous.html"><div class="example">À propos de nous</div></a></li>
             <li>
                 <div class="dropdown">
-                <button class="dropbtn"><a href="https://lucasrambert4.github.io/Web/Services.html" style="font-family: Georgia; font-size:14px;">Services</a></button>
+                <button class="dropbtn"><a href="https://lucasrambert4.github.io/Web/Services.html" style="font-family: Georgia"><div class="example">Services</div></a></button>
                 <div class="dropdown-content">
-                  <a href="https://lucasrambert4.github.io/Web/Developpement web.html">Développement web</a>
-                  <a href="https://lucasrambert4.github.io/Web/Developpement mobile.html">Développement mobile</a>
-                  <a href="https://lucasrambert4.github.io/Web/Maintenance et gestion.html">Maintenance et gestion</a>
+                  <a href="https://lucasrambert4.github.io/Web/Developpement web.html"><div class="example">Développement web</div></a>
+                  <a href="https://lucasrambert4.github.io/Web/Developpement mobile.html"><div class="example">Développement mobile</div></a>
+                  <a href="https://lucasrambert4.github.io/Web/Maintenance et gestion.html"><div class="example">Maintenance et gestion</div></a>
                 </div>
               </div>
             </li>
-            <li><a href="https://lucasrambert4.github.io/Web/Contactez-nous.html">Contactez-nous</a></li>
+            <li><a href="https://lucasrambert4.github.io/Web/Contactez-nous.html"><div class="example">Contactez-nous</div></a></li>
         </ul>
     </nav>
 </header>
@@ -163,21 +206,21 @@
 
         <tr align="center" style="width:50rem;">
             <td align="center" colspan="2">
-                <p style="text-align: center; font-family: sans-serif;font-size: 40px;padding-bottom: 80px;"><b>À propos de nous<br><br><span style="font-size: 25px;">⛛</span></b></p>
+                <div class="titre" style="text-align: center; font-family: sans-serif;font-size: 40px;padding-bottom: 80px;"><b>À propos de nous<br><br><span style="font-size: 25px;">⛛</span></b></div>
             </td>
         </tr>
 
         <tr  align="center" style="width:50rem;">
             <td colspan="2">
-                <p style="text-align: center; font-family: sans-serif;font-size: 34px;padding-bottom: 10px;padding-left: 70px;padding-right: 70px;padding-bottom: 30px;color: rgb(97, 39, 0);"><b>QUI NOUS SOMMES</b></p>
-                <p style="text-align: justify; font-family: Helvetica;font-size: 22px;padding-bottom: 90px;padding-right: 70px;padding-left: 70px;">Nous sommes une société de conseil en transformation numérique et de développement de logiciels qui fournit des solutions d'ingénierie de pointe, aidant les entreprises du Fortune 500 et les entreprises clientes à résoudre les problèmes complexes qui surgissent toujours au cours de leur parcours d'évolution numérique. Depuis 2020, nous sommes un visionnaire et un partenaire d'ingénierie logicielle fiable pour des marques de classe mondiale.</p>
+                <div class="Petit_titre" style="text-align: center; font-family: sans-serif;padding-bottom: 10px;padding-left: 70px;padding-right: 70px;padding-bottom: 30px;color: rgb(97, 39, 0);"><b>QUI NOUS SOMMES</b></div>
+                <div class="text" style="text-align: justify; font-family: Helvetica;padding-bottom: 90px;padding-right: 70px;padding-left: 70px;">Nous sommes une société de conseil en transformation numérique et de développement de logiciels qui fournit des solutions d'ingénierie de pointe, aidant les entreprises du Fortune 500 et les entreprises clientes à résoudre les problèmes complexes qui surgissent toujours au cours de leur parcours d'évolution numérique. Depuis 2020, nous sommes un visionnaire et un partenaire d'ingénierie logicielle fiable pour des marques de classe mondiale.</div>
             </td>
         </tr>
 
         <tr  align="center" style="width:50rem;">
             <td colspan="2">
-                <p style="text-align: center; font-family: sans-serif;font-size: 34px;padding-bottom: 10px;padding-left: 70px;padding-right: 70px;padding-bottom: 30px;color: rgb(97, 39, 0);"><b>Notre vision</b></p>
-                <p style="text-align: justify; font-family: Helvetica;font-size: 22px;padding-bottom: 90px;padding-right: 70px;padding-left: 70px;">Notre vision est d'être une entreprise de solutions Web leader dans le secteur informatique et de progresser dans notre position actuelle sur le marché. Nous savons que la croissance du client est notre croissance, nous engageons donc nos clients à les aider à atteindre leurs objectifs commerciaux. Nous croyons au travail avec la précision et la meilleure qualité. Nous voulons être reconnus comme le fournisseur de services logiciels fiable, innovant et convivial dans l'industrie informatique.</p>
+                <div class="Petit_titre" style="text-align: center; font-family: sans-serif;padding-bottom: 10px;padding-left: 70px;padding-right: 70px;padding-bottom: 30px;color: rgb(97, 39, 0);"><b>Notre vision</b></div>
+                <div class="text" style="text-align: justify; font-family: Helvetica;padding-bottom: 90px;padding-right: 70px;padding-left: 70px;">Notre vision est d'être une entreprise de solutions Web leader dans le secteur informatique et de progresser dans notre position actuelle sur le marché. Nous savons que la croissance du client est notre croissance, nous engageons donc nos clients à les aider à atteindre leurs objectifs commerciaux. Nous croyons au travail avec la précision et la meilleure qualité. Nous voulons être reconnus comme le fournisseur de services logiciels fiable, innovant et convivial dans l'industrie informatique.</div>
             </td>
         </tr>
 
